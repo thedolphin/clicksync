@@ -1,0 +1,24 @@
+---
+clusters:
+  src:
+    name: src_cluster
+    user: clicksync
+    pass: ""
+    host: 10.1.0.100
+  dst:
+    name: dst_cluster
+    user: clicksync
+    pass: ""
+    host: 10.2.0.200
+
+databases:
+  - mydatabase
+
+# number of threads
+poolsize: 10
+
+# use remote(), needs destination cluster access to source cluster allowed
+direct: true
+
+# if defined, copy only partitions modified last
+days: 100
