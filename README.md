@@ -1,6 +1,7 @@
 # clicksync
 Tool for synchronizing clickhouse clusters
 
+- works only with partitioned MergeTree tables
 - uses info from ```system.clusters``` to determine nodes
 - creates tables on destination cluster
 - recreates tables if schema differ
