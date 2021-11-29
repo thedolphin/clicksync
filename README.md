@@ -2,6 +2,7 @@
 Tool for synchronizing clickhouse clusters
 
 - works only with partitioned MergeTree tables
+- can sync clusters with different node number
 - uses info from ```system.clusters``` to determine nodes
 - creates tables on destination cluster
 - recreates tables if schema differ
